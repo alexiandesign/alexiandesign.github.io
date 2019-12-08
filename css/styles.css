@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap');
+@import url('hover.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    z-index: +1;
+}
+
+nav a:link {
+    font-family: 'Big Shoulders Text', cursive;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 10px;
+    background-color: white;
+    flex-grow: 1;
+    text-decoration: none;
+    color: #8E7B2E;
+    text-align: center;
+    
+}
+
+
+nav a:visited {
+    color: #8E7B2E;
+}
+/*
+nav a:hover {
+    background-color: #8E7B2E;
+    color: white;
+}
+*/
+
+
+p {
+    font-family: 'Ralway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    
+}
+
+h1, h2, h3 {
+    font-family: 'Big Shoulders Text', cursive;
+    font-weight: 500;
+    font-size: 50px;
+    color: white;
+}
+
+#bgvid {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background: url(../images/turntableimg.JPG) no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+#s1 {
+    width: 100%;
+    height:  90vh;
+    background-size:cover;
+    display: flex;
+    /* justify content for horizontal alignment*/
+    justify-content: center;
+    /* align items for vertical alignment*/
+    align-items: center;
+
+    
+}
+
+
+#s1 hgroup {
+    background-color:#8E7B2E;
+    padding: 50px 50px;
+    text-align: center;
+    border-radius: 10px;
+    opacity: .95;
+
+
+}
+
+#s1 h1 {
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 120px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 120px;
+
+}
+
+#s1 h2 {
+    font-family: 'Ralway', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+
+.multi {
+    max-width: 100%;
+    padding: 40px;
+    background-color: #8E7B2E;
+ 
+    
+    
+}
+
+.multi article {
+    column-count: 2;
+    column-gap: 20px;
+    color: white;
+    
+}
+
+
+#gallery {
+    max-width: 100%;
+    height: auto;
+    background: url(../images/optonicaamp.jpg) no-repeat; 
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 120px;
+    align-items: center;
+	border: 10px solid #fff;
+    
+}
+
+#gallery figure {
+    position: relative;
+    width:500px;
+    height:300px;
+    margin: 20px;
+    box-shadow: 10px 10px 5px rgba(0,0,0,.6);
+    transition: all .3s;
+    color: white;
+    text-align: center;
+    z-index: 0;
+
+    
+    
+}
+
+#gallery figure:hover {
+    box-shadow: 10px 10px 10px black;
+    width:550px;
+    height:350px;
+    
+}
+
+#f1{
+    background: url(/images/marantzforsale1z.jpg);
+}
+
+#f1:hover {
+    background: url(/images/marantzforsale2z2.jpg);
+}
+
+#f2{
+    background: url(/images/regasale1z.jpg);
+}
+
+#f2:hover {
+    background: url(/images/regasale2z2.jpg);
+}
+
+#f3{
+   background: url(/images/speakerz.jpg)
+}
+
+#f3:hover {
+    background: url(/images/speakerz2.jpg);
+}
+
+
+figure h1{
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 50px;
+    text-shadow: 5px 5px 20px rgba(0,0,0,.6);
+    /*position: absolute;*/
+    top: 20px;
+    left 0;
+    width: 100%;
+    transition:all .3s;
+    
+}
+
+figure:hover h1{
+    top: 150px;
+    
+    /*top: 50px;
+    transform: translateY(-50%);*/
+    
+}
+
+figure figcaption {
+    background: rgba(0,0,0, .5);
+    font-family: 'Ralway', sans-serif;
+    padding: 20px;
+    /*position: absolute;*/
+    bottom: 80px;
+    left:0;
+    transition:all .6s
+        
+}
+
+figure:hover figcaption {
+    bottom:0;
+    
+}
+
+
+
+#s3 {
+    max-width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background: url(../images/woodtable.jpg) no-repeat fixed center center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 10px solid #fff;
+    padding: 20px;
+    /*position: absolute;*/
+}
+
+#s3 article {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+
+    /*width: 30%;*/
+
+}
+
+
+
+
+/*===SELL PAGE HERE===*/
+
+#sell {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background: url(../images/multiamps.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 40px;
+    /*position: absolute;*/
+    display: inline-flex;
+    align-items: flex-end;
+
+}
+
+/*===STORE PAGE HERE===*/
+
+#store img {
+    width: 500px;
+    height: auto;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    height: 100%;
+    padding: 10px;
+    
+
+}
+
+#store article {
+    width: 100%;
+    padding: 60px;
+    background-color: white;
+    border: 20px solid #8E7B2E;
+    border-bottom: 5px solid #8E7B2E;
+    
+}
+
+
+#store p {
+    font-family: 'Ralway', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #8E7B2E;
+    line-height: 24px;
+    margin-bottom: 20px;
+    padding: 10px;
+    column-count: 2;
+    column-gap: 20px;
+    
+}
+
+#store h1{
+    font-family: 'Big Shoulders Text', cursive;
+    font-weight: 500;
+    font-size: 70px;
+    color: #8E7B2E;
+    padding: 10px;
+}
+
+#store h2 {
+    font-family: 'Ralway', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #8E7B2E;
+    padding: 10px;
+    
+
+}
+
+#store h3{
+    font-family: 'Big Shoulders Text', cursive;
+    font-weight: 500;
+    font-size:50px;
+    color: #8E7B2E;
+    padding: 10px;
+}
+
+/*===SERVICE PAGE HERE===*/
+
+
+
+
+#service1 {
+    
+    background: url(../images/repair1.jpg) no-repeat fixed center center;
+    background-size: cover;
+    width:100%;
+    min-height: 100vh;
+    height:auto;
+    
+    
+}
+
+#service2 {
+    background: url(../images/repair3.jpg) no-repeat fixed center center;
+    background-size: cover;
+    padding: 40px;
+    width:100%;
+    min-height: 100vh;
+    
+}
+#service3 {
+    background: url(../images/repair7.jpg) no-repeat fixed center center;
+    background-size: cover;
+    width:100%;
+    min-height: 100vh;
+    height:auto;
+    position: relative;
+   border-top: 200px solid transparent;
+   margin: -200px 0 0;
+   background-clip: padding-box;
+    
+}
+
+#service1 article {
+    width:40%;
+    background:#8E7B2E;
+    padding:20px;
+    right:40px;
+    bottom:50px;
+    color: white;
+}
+
+#service2 article {
+    width:40%;
+    background:#8E7B2E;
+    padding:20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+#service3 article {
+    width:40%;
+    background:#8E7B2E;
+    padding:20px;
+    right:40px;
+    top:40px;
+    color: white;
+}
+    
+
+
+#contact {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background: url(../images/yamreceiver.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 40px;
+
+    
+    
+}
+
+#contact hgroup {
+	width: 80%;
+	background: #eee;
+	padding: 20px;
+	margin: 80px auto;
+	border-radius: 10px;
+    position: relative;
+}
+
+input[type=text], input[type=email] {
+    width: 60%;
+    padding: 12px 0px 4px;
+    margin: 6px 0 20px;
+    display: block;
+	border:none;
+    border-bottom: 1px dotted #000;
+/*    border-radius: 4px;*/
+    font-size:22px;
+    font-family:'Ralway', sans-serif;
+    color:#000;
+    background: #eee;
+    transition:all .3s;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+    width: 100%;
+    background: #eee;
+    color:#f00;
+	outline: none;
+	border-bottom: 1px dotted #f00;
+}
+
+input[type=submit], input[type=reset] {
+    display: inline-block;
+    width: 20%;
+    background-color:#8E7B2E;
+    color: white;
+    padding: 14px 20px;
+    margin: 14px 10px 14px 0;
+	outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size:22px;
+    font-family:'Ralway', sans-serif;
+    transition:all .3s;   
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color:#333;
+}
+
+
+textarea {
+    display: block;
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+	margin: 6px 0 20px;
+    border-radius: 4px;
+	border: none;
+    border-bottom: 1px dotted #000;
+    background-color: #fff;
+    font-size:22px;
+    resize: none;
+    color:#333;
+	transition:all .3s; 
+}
+textarea:focus {
+    background: #333;
+    color:#fff;
+	outline: none;
+	border-bottom: 1px dotted #f00;
+}
+
+label {
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 32px;
+	font-weight: 700;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+  
+.multi article {
+    column-count: 1;
+   
+    
+}
+
+    
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+    
+     figure h1{
+        
+         position: absolute;
+
+    }
+    
+    figure figcaption{
+        position: absolute;
+    }
+    
+    #service1  article {
+
+    position: absolute;
+    
+}
+    
+        #service1  article {
+
+    position: absolute;
+    
+}
+    
+        #service2  article {
+
+    position: absolute;
+    
+}
+        #service3  article {
+
+    position: absolute;
+    
+}
+}
+ 
